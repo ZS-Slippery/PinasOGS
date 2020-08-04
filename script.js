@@ -4,7 +4,7 @@
 var output = $('.output');
 var input = $('textarea.input');
 var toOutput;
-
+var audio = new Audio('Rotisary Chicken.mp3');
 // Creates the event listner for the comands ==
 // Yes this is a long one - could do with some
 // improvements ===============================
@@ -25,13 +25,13 @@ input.keypress(function(e) {
 		} else if (inputVal == "contact") {
 			contactMe();
 			input.val('');
-		} else if (inputVal == "clear") {
-			clearConsole();
+		} else if (inputVal == "Slippery") {
+			PlayMemes();
 			input.val('');
 		} else if (inputVal.startsWith("say") === true) {
 			sayThis(inputVal);
 			input.val('');
-		} else if (inputVal.startsWith("Vbucks" , "vbucks") === true) {
+		} else if (inputVal.startsWith("Vbucks") === true) {
 			Vbucks(inputVal);
 			input.val('');
 		}
@@ -67,10 +67,11 @@ function seperator() {
 	Output('<span class="seperator">== == == == == == == == == == == == == == == == == ==</span></br>');
 }
 
-//clears the screen
-function clearConsole() {
+//Plays Meme Song of My choice
+function PlayMemes() {
+	audio.play();
 	output.html("");
-	Output('<span>clear</span></br>');
+	Output("Enjoy This Masterpiece");
 }
 
 // prints out a list of "all" comands available

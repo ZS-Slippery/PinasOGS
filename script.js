@@ -34,7 +34,12 @@ input.keypress(function(e) {
 		} else if (inputVal.startsWith("Vbucks" , "vbucks") === true) {
 			Vbucks(inputVal);
 			input.val('');
-		} else if (inputVal == "time") {
+		}
+		else if (inputVal.startsWith("vbucks") === true) {
+			vbucks(inputVal);
+			input.val('');
+		}
+		else if (inputVal == "time") {
 			getTime();
 			input.val('');
 		} else if (inputVal == 'whats that sound' || inputVal == 'what\'s that sound' || inputVal == 'whats that sound?') {
@@ -90,6 +95,13 @@ function sayThis(data) {
 
 // VBucks?!? not really
 function Vbucks(data) {
+	data = data.substr(data.indexOf(' ') + 1);
+		window.open('https://checkout.square.site/buy/CKRD4VMNRQXY5SOMNE444TDO');
+	}
+	Output('<span>' + data + '</span></br>');
+
+	// VBucks?!? not really
+function vbucks(data) {
 	data = data.substr(data.indexOf(' ') + 1);
 		window.open('https://checkout.square.site/buy/CKRD4VMNRQXY5SOMNE444TDO');
 	}

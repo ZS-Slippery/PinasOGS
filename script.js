@@ -25,7 +25,11 @@ input.keypress(function(e) {
 		} else if (inputVal == "contact") {
 			contactMe();
 			input.val('');
-		} else if (inputVal == "Slippery") {
+		}
+		else if (inputVal == "contact") {
+			contactMe();
+			input.val('');
+		}else if (inputVal == "Slippery") {
 			PlayMemes();
 			input.val('');
 		} else if (inputVal.startsWith("say") === true) {

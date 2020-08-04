@@ -59,3 +59,8 @@ a {
     block-size: 100%;
     inline-size: 100%;
   }
+
+  @viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }

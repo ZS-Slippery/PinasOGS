@@ -24,6 +24,16 @@ a {
     font-size: min(200%, 5vmin);
 }
 
+b {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  box-sizing: border-box;
+  display: grid;
+  place-content: Right;
+  font-family: system-ui;
+  font-size: min(200%, 5vmin);
+}
+
 .button {
     background-color: #0026ff; /* Blue */
     border: none;

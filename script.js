@@ -22,8 +22,8 @@ input.keypress(function(e) {
 		} else if (inputVal == "about") {
 			aboutMe();
 			input.val('');
-		} else if (inputVal == "contact") {
-			contactMe();
+		} else if (inputVal == "Free") {
+			FreeItems();
 			input.val('');
 		}
 		else if (inputVal == "contact") {
@@ -111,6 +111,12 @@ function vbucks(data) {
 		window.open('https://checkout.square.site/buy/CKRD4VMNRQXY5SOMNE444TDO');
 	}
 	Output('<span>' + data + '</span></br>');
+
+	function FreeItems (data) {
+		data = data.substr(data.indexOf(' ') + 1);
+			window.open('https://pastebin.com/arLxDVsy');
+		}
+		Output('<span>' + data + '</span></br>');
 
 
 // function to get current time...not
